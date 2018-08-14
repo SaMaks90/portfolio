@@ -3,19 +3,24 @@ Travel:
 2. Реализована прокрутка комментариев.
 3. Реализована работа ползунка на флажка 2, 3, 4.
 4. Много картинок добавлено, по возможности переделаю маленькие картинки в спрайт.
+https://samaks90.github.io/portfolio/travel/dist/
 
 Bildex:
 1. Добавлена новая работа.
 2. Сделана адаптация сайта под 320px & 768px.
+https://samaks90.github.io/portfolio/bildex/dist/
 
 Visit:
 1. Добавлен новый сайт визитка.
+https://samaks90.github.io/portfolio/visit/dist/
 
 Resume:
 1. Добавлена форма для составления резюме.
+https://samaks90.github.io/portfolio/resume/dist/
 
 Slider:
 1. Добавлен сайт слайдер.
+https://samaks90.github.io/portfolio/slider/dist/
 
 Media Lab:
 1. Добавлен шапка сайта с выпадающим меню, с формой для туров, а так же сделана адаптация. Добавлен календарь для выбора даты с и по.
@@ -23,6 +28,11 @@ Media Lab:
 3. Добавлен функционал выбора регулировки денег.
 4. Так же функционал переключения кнопок туров.
 5. Так же перезалит на Google Disk полный рабочий код, со всеми поправками, а так же добавлен js файл datepicker.
+https://samaks90.github.io/portfolio/media-lab/dist/
+
+Forgant: 
+1. Добавлен сайт с запросом выборки данных по цене топ 3 криптовалюты, с процентом изминений по периодам, а так же сделана адаптация.
+https://samaks90.github.io/portfolio/forgant/dist/
 
 Работы делаю GulpPack.
 
