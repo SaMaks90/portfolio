@@ -1,0 +1,1 @@
+"use strict";var burgerMenu=document.querySelector(".burger"),menu=document.querySelector(".menu");function menuToggle(e){"none"===menu.style.display||""===menu.style.display?(menu.style.display="flex",burgerMenu.classList.toggle("active-menu")):(menu.style.display="none",burgerMenu.classList.toggle("active-menu"))}burgerMenu.addEventListener("click",menuToggle);
