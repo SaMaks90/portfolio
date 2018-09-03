@@ -42,6 +42,11 @@ S-PRO:
 1. Добавлен веб сайт, сделана адптация, реализовано меню бургер.
 https://samaks90.github.io/portfolio/s-pro/dist/
 
+Webstars: 
+1. Добавлена шапка и слайдер интернет магазина, сделана адаптация под 320px и 768px.
+2. Добавлен Slick Slider.
+https://samaks90.github.io/portfolio/webstars/dist/
+
 Работы делаю GulpPack.
 
 Все работы в полном рабочем коде и минифицированом складываю на GoogleDisk:
