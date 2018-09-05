@@ -47,6 +47,12 @@ Webstars:
 2. Добавлен Slick Slider.
 https://samaks90.github.io/portfolio/webstars/dist/
 
+BlackHorse: 
+1. Добавлен веб-сайт, сделана адаптация, добавлен Burger menu.
+https://samaks90.github.io/portfolio/blackhorse/web/dist/
+2. Сделан график (bar char), который на основе массива выводит зарисовывает график.
+https://samaks90.github.io/portfolio/blackhorse/schedule/dist/
+
 Работы делаю GulpPack.
 
 Все работы в полном рабочем коде и минифицированом складываю на GoogleDisk:

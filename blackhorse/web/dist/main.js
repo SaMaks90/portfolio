@@ -1,0 +1,1 @@
+"use strict";var menu=document.querySelector(".menu-media");function handler(e){"menu-media"===menu.classList.value?(menu.classList.add("menu-media--active"),document.querySelector(".menu").style.display="flex"):(menu.classList.remove("menu-media--active"),document.querySelector(".menu").style.display="none")}menu.addEventListener("click",handler);
