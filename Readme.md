@@ -53,6 +53,10 @@ https://samaks90.github.io/portfolio/blackhorse/web/dist/
 2. Сделан график (bar char), который на основе массива выводит зарисовывает график.
 https://samaks90.github.io/portfolio/blackhorse/schedule/dist/
 
+Cubes.
+1. Веб-приложение кубики. Добавление и удаление кубиков (строк, столбиков). Если остался один кубик тогда блокируется удаление.
+https://samaks90.github.io/portfolio/cubes/dist/
+
 Работы делаю GulpPack.
 
 Все работы в полном рабочем коде и минифицированом складываю на GoogleDisk:
