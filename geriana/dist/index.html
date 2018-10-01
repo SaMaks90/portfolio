@@ -18,12 +18,13 @@
         </div>
 
         <div class="header-right">
-            <button class="sign-up">sign up</button>
-            <button class="log-in">log in</button>
-            <div class="menu">
+            <button class="sign-up sign-up--media menu--media menu-media--close menu-media">sign up</button>
+            <button class="log-in log-in--media menu--media menu-media--close menu-media">log in</button>
+            <div class="menu-burger">
                 <span></span>
-                <p class="menu__text">menu</p>
+                <p class="menu-burger__text">menu</p>
             </div>
+            <div class="menu-burger--open menu-media--close menu-media"></div>
         </div>
     </header>
 
@@ -39,18 +40,12 @@
     <div class="search">
         <form action="#" class="search__form">
             <label for="search">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve">
-                    <path d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3
-                        s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4
-                        C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3
-                        s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z"/>
-                </svg>
+                <img src="./images/search.svg" alt="search">
                 <input type="text" name="search" id="search" placeholder="Enter the service here ...">
             </label>
             <input type="submit" value="ZNAJDŹ OPIEKUNKĘ">
         </form>
-        <p class="search__text">Want to care with Geriana? <span>Become a Caregiver</span></p>
+        <p class="search__text">Want to care with Geriana? <a href="#">Become a Caregiver</a></p>
     </div>
 
     <!-- Specialists block -->
@@ -84,8 +79,8 @@
     </section>
 
     <!-- How it works block -->
+    <div class="how-works-image"></div>
     <section class="how-works">
-        <div class="how-works__image"></div>
 
         <header class="how-works__block">
             <h4 class="block__name">Jak Działamy dla Poszukujących Opieki</h4>
@@ -129,85 +124,109 @@
     </section>
 
     <!-- Recalls block -->
+    <div class="recalls-image"></div>
     <section class="recalls">
-        <div class="recalls__image"></div>
         <h3 class="recalls__header">What do our Clients Say?</h3>
         <div class="recalls__block">
             <article class="recall">
                 <p class="recall__text">Moja mama zachorowała jakiś czas temu i nie jest już zupełnie samodzielna. Sama przestałam dawac radę zajmować się własnym domem ..</p>
-                <footer class="user">
-                    <h4 class="user__name">Aneta, 39l</h4>
-                    <p class="user__position">Service provider</p>
+                <div class="user">
+                    <footer>
+                        <h4 class="user__name">Aneta, 39l</h4>
+                        <p class="user__position">Service provider</p>
+                    </footer>
                     <img src="./images/users.jpg" alt="" class="user__img">
-                </footer>
+                </div>
             </article>
 
             <article class="recall">
                 <p class="recall__text">Moja mama zachorowała jakiś czas temu i nie jest już zupełnie samodzielna. Sama przestałam dawac radę zajmować się własnym domem ..</p>
-                <footer class="user">
-                    <h4 class="user__name">Aneta, 39l</h4>
-                    <p class="user__position">Service provider</p>
+                <div class="user">
+                    <footer>
+                        <h4 class="user__name">Aneta, 39l</h4>
+                        <p class="user__position">Service provider</p>
+                    </footer>
                     <img src="./images/users.jpg" alt="" class="user__img">
-                </footer>
+                </div>
             </article>
 
             <article class="recall">
                 <p class="recall__text">Moja mama zachorowała jakiś czas temu i nie jest już zupełnie samodzielna. Sama przestałam dawac radę zajmować się własnym domem ..</p>
-                <footer class="user">
-                    <h4 class="user__name">Aneta, 39l</h4>
-                    <p class="user__position">Service provider</p>
+                <div class="user">
+                    <footer>
+                        <h4 class="user__name">Aneta, 39l</h4>
+                        <p class="user__position">Service provider</p>
+                    </footer>
                     <img src="./images/users.jpg" alt="" class="user__img">
-                </footer>
+                </div>
             </article>
 
             <article class="recall">
                 <p class="recall__text">Moja mama zachorowała jakiś czas temu i nie jest już zupełnie samodzielna. Sama przestałam dawac radę zajmować się własnym domem ..</p>
-                <footer class="user">
-                    <h4 class="user__name">Aneta, 39l</h4>
-                    <p class="user__position">Service provider</p>
+                <div class="user">
+                    <footer>
+                        <h4 class="user__name">Aneta, 39l</h4>
+                        <p class="user__position">Service provider</p>
+                    </footer>
                     <img src="./images/users.jpg" alt="" class="user__img">
-                </footer>
+                </div>
             </article>
 
             <article class="recall">
                 <p class="recall__text">Moja mama zachorowała jakiś czas temu i nie jest już zupełnie samodzielna. Sama przestałam dawac radę zajmować się własnym domem ..</p>
-                <footer class="user">
-                    <h4 class="user__name">Aneta, 39l</h4>
-                    <p class="user__position">Service provider</p>
+                <div class="user">
+                    <footer>
+                        <h4 class="user__name">Aneta, 39l</h4>
+                        <p class="user__position">Service provider</p>
+                    </footer>
                     <img src="./images/users.jpg" alt="" class="user__img">
-                </footer>
+                </div>
             </article>
 
             <article class="recall">
                 <p class="recall__text">Moja mama zachorowała jakiś czas temu i nie jest już zupełnie samodzielna. Sama przestałam dawac radę zajmować się własnym domem ..</p>
-                <footer class="user">
-                    <h4 class="user__name">Aneta, 39l</h4>
-                    <p class="user__position">Service provider</p>
+                <div class="user">
+                    <footer>
+                        <h4 class="user__name">Aneta, 39l</h4>
+                        <p class="user__position">Service provider</p>
+                    </footer>
                     <img src="./images/users.jpg" alt="" class="user__img">
-                </footer>
+                </div>
             </article>
         </div>
     </section>
 
     <!-- Our preferences block -->
-    <div class="our-preferences">
+    <div class="our-preferences-image"></div>
+    <section class="our-preferences">
         <div class="our-preferences__logo-shape"></div>
-        <div class="our-preferences__image"></div>
-        <nav class="our-preferences__block">
+        <nav class="list-block">
             <ul class="list">
-                <li class="list__item">10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</li>
-                <li class="list__item">Gwarantujemy bezpieczeństwo przelewów pieniężnych oraz zapłatę za pracę, kontrakt reguluje współpracę.</li>
-                <li class="list__item">Nie jesteśmy agencją. Nasza prowizja to jedynie 10% od ceny opieki pobierane od klienta. Dla opiekunek portal jest darmowy.</li>
-                <li class="list__item">Samemu określasz długość płatnego okresu próbnego i okresu wypowiedzenia</li>
-                <li class="list__item">Oferujemy usługi dodatkowe: ubezpieczenie i assistance 24h poprzez konsultantów w Help Center oraz rabaty na kursy językowe i szkolenia opiekunów</li>
-                <li class="list__item">Pewność kogo zatrudniasz: przeprowadzamy interview pod kątem jezyków obcych, sprawdzamy referencje i ukończone dyplomy. Dodatkowo po każdej pracy wystawiane są opinie, także wybierając opiekuna bazujesz na doświadczeniach innych z wybraną osobą.</li>
+                <li class="list__item">
+                    10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki
+                </li>
+                <li class="list__item">
+                    Gwarantujemy bezpieczeństwo przelewów pieniężnych oraz zapłatę za pracę, kontrakt reguluje współpracę.
+                </li>
+                <li class="list__item">
+                    Nie jesteśmy agencją. Nasza prowizja to jedynie 10% od ceny opieki pobierane od klienta. Dla opiekunek portal jest darmowy.
+                </li>
+                <li class="list__item">
+                    Samemu określasz długość płatnego okresu próbnego i okresu wypowiedzenia
+                </li>
+                <li class="list__item">
+                    Oferujemy usługi dodatkowe: ubezpieczenie i assistance 24h poprzez konsultantów w Help Center oraz rabaty na kursy językowe i szkolenia opiekunów
+                </li>
+                <li class="list__item">
+                    Pewność kogo zatrudniasz: przeprowadzamy interview pod kątem jezyków obcych, sprawdzamy referencje i ukończone dyplomy. Dodatkowo po każdej pracy wystawiane są opinie, także wybierając opiekuna bazujesz na doświadczeniach innych z wybraną osobą.
+                </li>
             </ul>
-            <header class="name-block">
-                <h3 class="name-block__header">Nasze Mocne Strony</h3>
-                <button class="name-block__button">ZNAJDŹ OPIEKUNKĘ</button>
-            </header>
         </nav>
-    </div>
+        <header class="name-block">
+            <h3 class="name-block__header">Nasze Mocne Strony</h3>
+            <button class="name-block__button">ZNAJDŹ OPIEKUNKĘ</button>
+        </header>
+    </section>
 
     <!-- Call us block -->
     <section class="call-us">
@@ -217,48 +236,54 @@
 
     <!-- Footer block -->
     <footer class="footer">
-        <nav class="company">
-            <img src="./images/logo.png" alt="" class="company__logo">
-            <ul class="company__social">
-                <li class="social-text">Follow Us</li>
-                <li>
-                    <a href="#" class="icon facebook"></a>
+        <div class="company">
+            <img src="./images/logo.png" alt="logo" class="company__logo">
+            <div class="follow">
+                <p class="follow__text">Follow Us</p>
+                <nav>
+                    <ul class="follow__social">
+                        <li>
+                            <a href="#" class="icon facebook"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon twitter"></a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon linkedin"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="company__developer">&copy; 2018 Geriana. All rights reserved.</p>
+        </div>
+
+        <nav>
+            <ul class="list-company">
+                <li class="list-company__item">
+                    <p>O portalu</p>
+                    <ul class="list-company__sub">
+                        <li class="sub__item"><a href="#">Kim jesteśmy</a></li>
+                        <li class="sub__item"><a href="#">O nas w mediach</a></li>
+                        <li class="sub__item"><a href="#">Zasady i regulaminy</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="#" class="icon twitter"></a>
+                <li class="list-company__item">
+                    <p>Współpraca</p>
+                    <ul class="list-company__sub">
+                        <li class="sub__item"><a href="#">Zostań naszym partnerem</a></li>
+                        <li class="sub__item"><a href="#">Praca</a></li>
+                    </ul>
                 </li>
-                <li>
-                    <a href="#" class="icon linkedin"></a>
+                <li class="list-company__item">
+                    <p>Centrum Pomocy</p>
+                    <ul class="list-company__sub">
+                        <li class="sub__item"><a href="#">Opiekunowie</a></li>
+                        <li class="sub__item"><a href="#">Poszukujący opieki</a></li>
+                        <li class="sub__item"><a href="#">Kontakt</a></li>
+                    </ul>
                 </li>
             </ul>
-            <p class="company__developer">&copy; 2018 Geriana. All rights reserved.</p>
         </nav>
-
-        <ul class="list-company">
-            <li class="list-company__item">
-                <a href="#">O portalu</a>
-                <ul class="list-company__sub">
-                    <li class="sub__item"><a href="#">Kim jesteśmy</a></li>
-                    <li class="sub__item"><a href="#">O nas w mediach</a></li>
-                    <li class="sub__item"><a href="#">Zasady i regulaminy</a></li>
-                </ul>
-            </li>
-            <li class="list-company__item">
-                <a href="#">Współpraca</a>
-                <ul class="list-company__sub">
-                    <li class="sub__item"><a href="#">Zostań naszym partnerem</a></li>
-                    <li class="sub__item"><a href="#">Praca</a></li>
-                </ul>
-            </li>
-            <li class="list-company__item">
-                <a href="#">Centrum Pomocy</a>
-                <ul class="list-company__sub">
-                    <li class="sub__item"><a href="#">Opiekunowie</a></li>
-                    <li class="sub__item"><a href="#">Poszukujący opieki</a></li>
-                    <li class="sub__item"><a href="#">Kontakt</a></li>
-                </ul>
-            </li>
-        </ul>
     </footer>
 
     <script src="main.js"></script>
