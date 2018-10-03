@@ -10,11 +10,13 @@
 button {
 	outline: none;
 	border: none;
+	line-height: 1;
 }
 
 input {
 	outline: none;
 	border: none;
+	line-height: 1;
 }
 
 ul {
@@ -23,6 +25,10 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+button:hover {
+	cursor: pointer;
 }
 
 .menu {
@@ -54,7 +60,7 @@ a {
 .menu .header-left .button {
 	text-transform: uppercase;
 	height: 40px;
-	border: 2px solid white;
+	border: 2px solid #fff;
 	border-radius: 5px;
 	background: transparent;
 }
@@ -71,7 +77,7 @@ a {
 	align-items: center;
 	width: 165px;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1rem;
 	font-weight: normal;
 }
@@ -89,9 +95,15 @@ a {
 .menu .header-left .call {
 	width: 100px;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1rem;
 	font-weight: normal;
+}
+
+.menu .header-left .call:hover,
+.menu .header-left .help:hover {
+	-webkit-box-shadow: 0 0 30px #c9c9c9be;
+	box-shadow: 0 0 30px #c9c9c9be;
 }
 
 .menu .header-right {
@@ -108,7 +120,7 @@ a {
 	background: transparent;
 	text-transform: capitalize;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1rem;
 	font-weight: normal;
 }
@@ -129,7 +141,7 @@ a {
 	display: flex;
 	width: 100%;
 	height: 3px;
-	background: white;
+	background: #fff;
 	border-radius: 1px;
 }
 
@@ -141,7 +153,7 @@ a {
 	position: absolute;
 	width: 100%;
 	height: 3px;
-	background: white;
+	background: #fff;
 	border-radius: 1px;
 	top: calc(50% - 1.5px);
 }
@@ -150,7 +162,7 @@ a {
 	position: absolute;
 	left: 150%;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1rem;
 	font-weight: normal;
 	text-transform: capitalize;
@@ -191,7 +203,7 @@ a {
 
 .banner__header-text {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 3.625rem;
 	font-weight: bold;
 	text-align: center;
@@ -200,7 +212,7 @@ a {
 
 .banner__text {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1.625rem;
 	font-weight: bold;
 	width: 768px;
@@ -219,7 +231,7 @@ a {
 	border-radius: 5px;
 	background: #ff5151;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1.125rem;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -242,7 +254,7 @@ a {
 }
 
 .search__form {
-	background: white;
+	background: #fff;
 	width: 750px;
 	border-radius: 5px;
 	padding: 10px;
@@ -278,7 +290,7 @@ a {
 
 .search__form label input {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: rgba(13, 25, 41, 0.5);
+	color: #868d95;
 	font-size: 18px;
 	font-weight: normal;
 	text-align: left;
@@ -291,11 +303,15 @@ a {
 	padding: 18px 0;
 	border-radius: 5px;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 18px;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
+}
+
+.search__form input[type="submit"]:hover {
+	cursor: pointer;
 }
 
 .search__text {
@@ -315,7 +331,7 @@ a {
 .specialists {
 	width: 100%;
 	padding: 104px 0 135px 0;
-	background: white;
+	background: #fff;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -442,7 +458,7 @@ a {
 
 .how-works__block .block__name {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 5rem;
 	font-weight: normal;
 }
@@ -450,12 +466,12 @@ a {
 .how-works__block .block__button {
 	margin-top: 71px;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1.125rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
-	border: 2px solid white;
+	border: 2px solid #fff;
 	border-radius: 5px;
 	width: 274px;
 	background: none;
@@ -504,12 +520,12 @@ a {
 	justify-content: center;
 	border-radius: 50%;
 	position: absolute;
-	border: 3px dotted white;
+	border: 3px dotted #fff;
 }
 
 .how-works .steps .step .step-text__name {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1.375rem;
 	font-weight: bold;
 }
@@ -517,7 +533,7 @@ a {
 .how-works .steps .step .step-text__text {
 	margin-top: 10px;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1rem;
 	font-weight: normal;
 }
@@ -526,7 +542,7 @@ a {
 	position: relative;
 	top: 14px;
 	width: 165px;
-	border-top: 2px solid white;
+	border-top: 2px solid #fff;
 }
 
 .how-works .steps .step-radius {
@@ -534,7 +550,7 @@ a {
 	top: 14px;
 	width: 92px;
 	height: 184px;
-	border: 2px solid white;
+	border: 2px solid #fff;
 }
 
 .how-works .steps .step-radius::before {
@@ -594,7 +610,7 @@ a {
 .how-works .steps .step-right .step-radius::before {
 	border-top: 8px solid transparent;
 	border-bottom: 8px solid transparent;
-	border-left: 14px solid white;
+	border-left: 14px solid #fff;
 	left: 100%;
 }
 
@@ -629,7 +645,7 @@ a {
 .how-works .steps .step-left .step-radius::before {
 	border-top: 8px solid transparent;
 	border-bottom: 8px solid transparent;
-	border-right: 14px solid white;
+	border-right: 14px solid #fff;
 	right: 100%;
 }
 
@@ -817,7 +833,7 @@ a {
 
 .our-preferences .list__item {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1rem;
 	font-weight: normal;
 	text-align: left;
@@ -840,7 +856,7 @@ a {
 
 .our-preferences .name-block__header {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 5rem;
 	font-weight: normal;
 	text-align: left;
@@ -851,15 +867,17 @@ a {
 .our-preferences .name-block__button {
 	margin-top: 58px;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1.125rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	width: 275px;
 	padding: 23px 0;
 	background: none;
-	border: 2px solid white;
+	border: 2px solid #fff;
 	border-radius: 5px;
+	position: relative;
+	z-index: 2;
 }
 
 .call-us {
@@ -909,7 +927,7 @@ a {
 	outline: none;
 	text-decoration: none;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -964,7 +982,7 @@ a {
 
 .footer .company .follow__text {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #fff;
 	font-size: 1.375rem;
 	font-weight: bold;
 	text-align: left;
@@ -1001,7 +1019,7 @@ a {
 .footer .company__developer {
 	margin-top: 15px;
 	font-family: 'Maven Pro' ,sans-serif;
-	color: rgba(255, 255, 255, 0.5);
+	color: #ffffff80;
 	font-size: 0.875rem;
 	font-weight: normal;
 }
@@ -1019,7 +1037,7 @@ a {
 
 .footer .list-company__item p {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: white;
+	color: #ffffff;
 	font-size: 1.375rem;
 	font-weight: bold;
 }
@@ -1028,17 +1046,17 @@ a {
 	margin-left: 0;
 }
 
-.footer .list-company__sub {
+.footer .list-company-sub {
 	margin-top: 40px;
 }
 
-.footer .list-company__sub .sub__item {
+.footer .list-company-sub .list-company-sub__item {
 	margin-top: 16px;
 }
 
-.footer .list-company__sub .sub__item a {
+.footer .list-company-sub .list-company-sub__item a {
 	font-family: 'Maven Pro' ,sans-serif;
-	color: rgba(255, 255, 255, 0.8);
+	color: #ffffffcc;
 	font-size: 1rem;
 	font-weight: bold;
 }
@@ -1133,7 +1151,7 @@ body {
 }
 
 .how-works .steps {
-	margin-left: 10px;
+	margin-left: 0;
 	margin-top: 120px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1379,7 +1397,6 @@ body {
 }
 
 .how-works .steps {
-	margin-left: 10px;
 	margin-top: 120px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1500,6 +1517,10 @@ body {
 	position: relative;
 	z-index: 3;
 	margin-right: 10px;
+}
+
+.menu .header-right .menu-burger:hover {
+	cursor: pointer;
 }
 
 .menu .header-right .menu-burger__text {
@@ -1655,7 +1676,7 @@ body {
 }
 
 .how-works .steps {
-	margin-left: 10px;
+	margin-left: 0;
 	margin-top: 120px;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
@@ -1835,15 +1856,15 @@ body {
 	font-size: 1rem;
 }
 
-.footer .list-company__sub {
+.footer .list-company-sub {
 	margin-top: 40px;
 }
 
-.footer .list-company__sub .sub__item {
+.footer .list-company-sub .list-company-sub__item {
 	margin-top: 8px;
 }
 
-.footer .list-company__sub .sub__item a {
+.footer .list-company-sub .list-company-sub__item a {
 	font-size: .85rem;
 }
 
@@ -1978,7 +1999,7 @@ body {
 	font-size: 0.9rem;
 }
 
-.footer .list-company__sub .sub__item a {
+.footer .list-company-sub .list-company-sub__item a {
 	font-size: .7rem;
 }
 
