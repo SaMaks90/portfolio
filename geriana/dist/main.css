@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro");
 
+.section__title {
+	font-family: 'Maven Pro' ,sans-serif;
+	color: #0b2a37;
+	font-size: 2.25rem;
+	font-weight: normal;
+}
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -102,8 +109,7 @@ button:hover {
 
 .menu .header-left .call:hover,
 .menu .header-left .help:hover {
-	-webkit-box-shadow: 0 0 30px #c9c9c9be;
-	box-shadow: 0 0 30px #c9c9c9be;
+	background: #bbb9b9b4;
 }
 
 .menu .header-right {
@@ -130,23 +136,7 @@ button:hover {
 	width: 30px;
 	height: 23px;
 	top: calc(50% - 11.5px);
-}
-
-.menu .header-right .menu-burger::before,
-.menu .header-right .menu-burger::after {
-	content: '';
-	position: absolute;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	width: 100%;
-	height: 3px;
-	background: #fff;
-	border-radius: 1px;
-}
-
-.menu .header-right .menu-burger::after {
-	bottom: 0;
+	display: none;
 }
 
 .menu .header-right .menu-burger span {
@@ -155,17 +145,18 @@ button:hover {
 	height: 3px;
 	background: #fff;
 	border-radius: 1px;
+}
+
+.menu .header-right .menu-burger__top {
+	top: 0;
+}
+
+.menu .header-right .menu-burger__middle {
 	top: calc(50% - 1.5px);
 }
 
-.menu .header-right .menu-burger__text {
-	position: absolute;
-	left: 150%;
-	font-family: 'Maven Pro' ,sans-serif;
-	color: #fff;
-	font-size: 1rem;
-	font-weight: normal;
-	text-transform: capitalize;
+.menu .header-right .menu-burger__bottom {
+	bottom: 0;
 }
 
 .banner {
@@ -249,6 +240,12 @@ button:hover {
 	font-weight: bold;
 	z-index: 2;
 	text-transform: uppercase;
+	-webkit-transition: 0.4s linear background;
+	transition: 0.4s linear background;
+}
+
+.banner__button:hover {
+	background: #ff5151a6;
 }
 
 .search {
@@ -311,7 +308,7 @@ button:hover {
 	width: 90%;
 }
 
-.search__form input[type="submit"] {
+.search__form button {
 	background: #ff5151;
 	width: 214px;
 	padding: 18px 0;
@@ -322,10 +319,12 @@ button:hover {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
+	-webkit-transition: 0.4s linear background;
+	transition: 0.4s linear background;
 }
 
-.search__form input[type="submit"]:hover {
-	cursor: pointer;
+.search__form button:hover {
+	background: #ff5151ab;
 }
 
 .search__text {
@@ -356,10 +355,6 @@ button:hover {
 }
 
 .specialists__header {
-	font-family: 'Maven Pro' ,sans-serif;
-	color: #0b2a37;
-	font-size: 2.25rem;
-	font-weight: normal;
 	text-align: center;
 }
 
@@ -490,6 +485,12 @@ button:hover {
 	width: 274px;
 	background: none;
 	padding: 23px 0;
+	-webkit-transition: 0.4s linear background;
+	transition: 0.4s linear background;
+}
+
+.how-works__block .block__button:hover {
+	background: rgba(79, 150, 150, 0.612);
 }
 
 .how-works .steps {
@@ -694,10 +695,6 @@ button:hover {
 }
 
 .recalls__header {
-	font-family: 'Maven Pro' ,sans-serif;
-	color: #0b2a37;
-	font-size: 2.25rem;
-	font-weight: normal;
 	text-align: center;
 }
 
@@ -783,11 +780,13 @@ button:hover {
 }
 
 .recalls .recalls__block .recall .user__img {
+	background-image: url("./images/users.jpg");
+	background-size: cover;
+	background-position: -7px 0;
 	margin-left: 9px;
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	border: transparent;
 }
 
 .recalls .recalls__block .recall:nth-of-type(n + 1) {
@@ -823,15 +822,9 @@ button:hover {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-}
-
-.our-preferences__logo-shape {
-	position: absolute;
 	background-image: url("./images/logo-shape.png");
-	width: 585px;
-	height: 452px;
-	bottom: 0;
-	right: 0;
+	background-position: right bottom;
+	background-repeat: no-repeat;
 }
 
 .our-preferences .list {
@@ -892,6 +885,12 @@ button:hover {
 	border-radius: 5px;
 	position: relative;
 	z-index: 2;
+	-webkit-transition: .4s linear background;
+	transition: .4s linear background;
+}
+
+.our-preferences .name-block__button:hover {
+	background: rgba(1, 150, 213, 0.473);
 }
 
 .call-us {
@@ -912,17 +911,11 @@ button:hover {
 }
 
 .call-us__header {
-	font-family: 'Maven Pro' ,sans-serif;
-	color: #0b2a37;
-	font-size: 2.25rem;
 	font-weight: bold;
 	text-align: center;
 }
 
-.call-us__header span {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+.call-us__text {
 	font-family: 'Maven Pro' ,sans-serif;
 	color: #0b2a37;
 	font-size: 1.125rem;
@@ -935,17 +928,24 @@ button:hover {
 .call-us__phone {
 	margin-top: 36px;
 	width: 210px;
-	padding: 16px 0 14px 0;
+	padding: 16px 0;
 	background: #ff6262;
 	border-radius: 5px;
 	outline: none;
 	text-decoration: none;
+	line-height: 1;
 	font-family: 'Maven Pro' ,sans-serif;
 	color: #fff;
 	font-size: 1rem;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: center;
+	-webkit-transition: .4s linear background;
+	transition: .4s linear background;
+}
+
+.call-us__phone:hover {
+	background: #ff6262ab;
 }
 
 .footer {
@@ -1045,8 +1045,8 @@ button:hover {
 }
 
 .footer .list-company__item {
-	width: 210px;
 	margin-left: 30px;
+	padding: 0 10px;
 }
 
 .footer .list-company__item p {
@@ -1531,6 +1531,9 @@ body {
 	position: relative;
 	z-index: 3;
 	margin-right: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 .menu .header-right .menu-burger:hover {
@@ -1550,17 +1553,17 @@ body {
 	right: 0;
 }
 
-.menu .header-right .menu-burger--cross span {
+.menu .header-right .menu-burger--cross .menu-burger__middle {
 	display: none;
 }
 
-.menu .header-right .menu-burger--cross::before {
+.menu .header-right .menu-burger--cross .menu-burger__top {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 	top: 10px;
 }
 
-.menu .header-right .menu-burger--cross::after {
+.menu .header-right .menu-burger--cross .menu-burger__bottom {
 	-webkit-transform: rotate(315deg);
 	transform: rotate(315deg);
 	top: 10px;
@@ -1772,10 +1775,6 @@ body {
 	font-size: 1.8rem;
 }
 
-.recalls .recalls__block {
-	margin-top: 80px;
-}
-
 .recalls .recalls__block .recall:nth-of-type(n + 2) {
 	margin: 40px 0 0 0;
 }
@@ -1862,7 +1861,6 @@ body {
 }
 
 .footer .list-company__item {
-	width: 170px;
 	margin-left: 10px;
 }
 
@@ -2003,10 +2001,6 @@ body {
 
 .footer .company__developer {
 	font-size: .7rem;
-}
-
-.footer .list-company__item {
-	width: 140px;
 }
 
 .footer .list-company__item p {
